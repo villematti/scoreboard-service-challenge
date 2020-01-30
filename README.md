@@ -2,6 +2,11 @@
 
 My application for the Scoreboard Challenge.
 
+## Install
+
+1. Run "composer install"
+2. Run "composer dump-autoload -o"
+3. Create directory called "db" to application root
 
 ## Architecture
 
