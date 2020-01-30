@@ -13,15 +13,7 @@ if (!empty($_POST['name']) && !empty($_POST['score'])) {
     }
 }
 
-$scores = $scoreboardView->getScores();
-
-usort($scores, function($a, $b) {
-    if (!empty($_GET['sort']) && $_GET['sort'] == 'asc') {
-        return $a['score'] <=> $b['score'];
-    } else {
-        return $b['score'] <=> $a['score'];
-    }
-});
+$scores = $scoreboardView->getScores($_GET['sort']);
 
 ?>
 <!DOCTYPE html>

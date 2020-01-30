@@ -30,7 +30,7 @@ Simple view layer on top of everything else. Only class connected to index.php.
 
 ### Sorting
 
-The app is Javascript-free and there is sorting option build in. If you set the url a parameter "sort" and give it a value "asc" or "dec" table will sort accordingly by score values.
+The app is Javascript-free and there is sorting option build in. If you set the url a parameter "sort" and give it a value "asc" table will sort values in ascending order. Default ordering is descending.
 
 ```
 /?sort=asc
