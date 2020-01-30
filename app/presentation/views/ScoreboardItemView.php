@@ -19,19 +19,7 @@ class ScoreboardItemView
         }
     }
 
-    public function getScores($order) {
-        $res = $this->repo->getScoreboardItems();
-        return $this->sortValues($res, $order);
-    }
-
-    private function sortValues($values, $order) {
-        usort($values, function($a, $b) {
-            if (!empty($order) && $order == 'asc') {
-                return $a['score'] <=> $b['score'];
-            } else {
-                return $b['score'] <=> $a['score'];
-            }
-        });
-        return $values;
+    public function getScores() {
+        return $this->repo->getScoreboardItems();
     }
 }
