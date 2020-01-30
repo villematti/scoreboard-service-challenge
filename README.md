@@ -2,6 +2,11 @@
 
 My application for the Scoreboard Challenge.
 
+## System Requirements
+- PHP 7
+- Composer 1.9.2
+- Sqlite3
+
 ## Install
 
 1. Run "composer install"
