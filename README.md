@@ -35,3 +35,5 @@ The app is Javascript-free and there is sorting option build in. If you set the 
 ```
 /?sort=asc
 ```
+
+When you add a new value, current sorting option will automatically hold and sort your new value accordingly.
